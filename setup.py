@@ -9,7 +9,7 @@ if __name__ == "__main__":
         name="SMNCopyNumberCaller",
         version="0.0.0.1",
         author="ILMN",
-        author_email="na@na.gov",
+        author_email="na@na.ilmn.com",
         description="Just making this installable via conda",
         long_description="see description",
         long_description_content_type="text/markdown",
