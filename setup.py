@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 if __name__ == "__main__":
     setuptools.setup(
         name="SMNCopyNumberCaller",
-        version="0.0.0.1",
+        version="0.0.0.4a-jem",
         author="ILMN",
         author_email="na@na.gov",
         description="Just making this installable via conda",
