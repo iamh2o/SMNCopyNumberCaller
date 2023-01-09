@@ -17,13 +17,16 @@ if __name__ == "__main__":
         project_urls={
             "Bug Tracker": "https://github.com/iamh2o/SMNCopyNumberCaller",
         },
+        packages=['SMNCopyNumberCaller', 'SMNCopyNumberCaller.caller', 'SMNCopyNumberCaller.depth_calling','SMNCopyNumberCaller.charts'],
+        package_data={'SMNCopyNumberCaller': ['SMNCopyNumberCaller/data/*']},
         classifiers=[
             "Programming Language :: Python :: 3",
             "License :: OSI Approved :: PolyForm Strict License 1.0.0",
             "Operating System :: OS Independent",
         ],
-        package_dir={"": "src"},
-        packages=setuptools.find_packages(where="src"),
+        setup_requires=['pytest-runner'],
+        tests_require=['pytest'],
+        package_dir={"SMNCopyNumberCaller": "SMNCopyNumberCaller"}, #packages=setuptools.find_packages(where="SMNCopyNumberCaller"),
         scripts=[
             "bin/smn_caller.py",
 	    "bin/smn_charts.py"
@@ -36,5 +39,8 @@ if __name__ == "__main__":
             "pysam >=0.15.3",
             "statsmodels >=0.9",
         ],
+        includde_package_data=True,
+        zip_safe=False,
+        
     )
     
